@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    command: /app/entrypoint.sh
+    volumes:
+       - media:/root/inventory_project/inventory_project/media
+    ports:
+      - "8000:8000"
+    environment:
+      DEBUG: '0'
+      DJANGO_SETTINGS_MODULE: 'inventory_project.settings'
+      DATABASE_URL: 'postgres://postgres:xXpyYlwhzsPiMvWuttoEdCCsVGFnXdxI@localhost:5432/railway'  # см. следующий пункт
+volumes:
+  media:

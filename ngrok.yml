@@ -1,0 +1,10 @@
+authtoken: 2foff0orjHsetAxljHbHZkFATB2_7674AgVBpffS6Ywaj8WCp
+version: 2
+
+console_ui: true
+
+tunnels:
+  web:
+    proto: http
+    addr: web:8000
+    domain: guiding-tortoise-solely.ngrok-free.app
